@@ -7,6 +7,7 @@ window.addEventListener("load", function() {
 ///To play the video
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
+	volume.innerHTML = "100%";
 	video.play();
 	
 });
