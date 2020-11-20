@@ -59,11 +59,13 @@ document.querySelector("#volumeSlider").addEventListener("change", function(e) {
 
 /// black white
 document.querySelector("#old").addEventListener("click", function() {
-	video.style.filter = "grayscale(100%)";
+	console.log("Old School");
+	video.classList.remove(“oldTime”);
 });
 
 
 /// original
 document.querySelector("#original").addEventListener("click", function() {
-	video.style.filter = "grayscale(0%)";
+	console.log("Original");
+	video.classList.remove(“original”);
 });
